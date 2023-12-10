@@ -6,15 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Prasang</title>
     <link rel="stylesheet" href="style.css">
-    <script src=
-"https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">
     </script>
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <script>
-            $.get("https://ipinfo.io", function(response) {
+        $.get("https://ipinfo.io", function (response) {
             alert(response.ip);
         }, "json")
     </script>
+    <script src="https://kit.fontawesome.com/1165876da6.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -30,7 +30,7 @@
         <img class="mandala-art" src="./Assets/abc.png" alt="">
         <img class="mandala-art-right" src="./Assets/abc.png" alt="">
         <div class="logo">
-            <svg class="logo"  data-aos="zoom-in" xmlns="http://www.w3.org/2000/svg" version="1.1"
+            <svg class="logo" data-aos="zoom-in" xmlns="http://www.w3.org/2000/svg" version="1.1"
                 xmlns:xlink="http://www.w3.org/1999/xlink" xmlns:svgjs="http://svgjs.dev/svgjs" width="2000"
                 height="1607" viewBox="0 0 2000 1607">
                 <g transform="matrix(1,0,0,1,0,0)"><svg viewBox="0 0 448 360" data-background-color="#ffffff"
@@ -80,7 +80,8 @@
                                                                                                     class="wordmark-text-0"
                                                                                                     data-fill-palette-color="primary"
                                                                                                     id="text-0"></path>
-                                                                                            </svg></g>
+                                                                                            </svg>
+                                                                                        </g>
                                                                                     </svg></g>
                                                                             </svg></g>
                                                                     </svg></g>
@@ -97,36 +98,78 @@
             </svg>
         </div>
         <h1 class="center">Prasang</h1>
-        <p class="center">Organised by EEE Department NIT GOA        </p>
-        <img class="elephant-left" src="./Assets/RXNqiur2_400x400.png" alt="">
+        <p class="center">Organised by EEE Department NIT GOA </p>
+        <img class="elephant-left" data-aos="fade-up-right" src="./Assets/RXNqiur2_400x400.png" alt="">
+        <img class="elephant-right" src="./Assets/RXNqiur2_400x400.png" alt="">
+
 
     </div>
+
     <div>
         <h2 class="center">Workshops</h2>
-        <div class="workshop">
-        <div class="workshop-box" data-aos="fade-right">3</div>
-        <div  class="workshop-box" data-aos="fade-up">1 </div>
-        <div class="workshop-box" data-aos="fade-left">4</div>
+        <div class="events">
+            <div class="events-box" data-aos="fade-right">
+                <img src="" alt="">
+            </div>
+            <div class="events-box" data-aos="fade-up">1 </div>
+            <div class="events-box" data-aos="fade-left">4</div>
         </div>
     </div>
-    <!-- <div>
-        <iframe
-        width="600"
-        height="450"
-        style="border:0"
-        loading="lazy"
-        allowfullscreen
-        referrerpolicy="no-referrer-when-downgrade"
-        src="https://www.google.com/maps/embed/v1/place?key=API_KEY
-          &q=Space+Needle,Seattle+WA">
-      </iframe>
-    </div> -->
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-    AOS.init({
-        duration: 1200,
-      })
-      </script>
+
+    <div>
+        <h2 class="center">Competitions</h2>
+        <div class="events">
+            <div class="events-box" data-aos="fade-right">
+                <div class="event-content">
+                    <h1>Code sprint</h1>
+                    <div class="event-front">
+                        <img src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRsF2oWS1t9H2Pt6sEarjlEvh7sGm5XJT86kA&usqp=CAU" alt="Avatar" style="width:300px;height:300px;">
+                    </div>
+                    <div class="event-back">
+                        <h1></h1>
+                        <p>Architect & Engineer</p>
+                        <button>Register</button>
+                    </div>
+                    </div>
+                </div>
+                <div class="events-box" data-aos="fade-up">
+                     </div>
+                <div class="events-box" data-aos="fade-left">4</div>
+            </div>
+        </div>
+        <footer>
+            <div class="row">
+                <div class="col">
+                    <h3>Contact Us</h3>
+                    <p>Email id: prasang@nitgoa.ac.in</p>
+                    <p>Address: Farmagudi ponda</p>
+
+                    <h3>Follow Us</h3>
+                    <ul class="social">
+                        <li><a href=""><i class="fab fa-facebook"></i></a></li>
+                        <li><a href=""><i class="fab fa-twitter"></i></a></li>
+                        <li><a href=""><i class="fab fa-instagram"></i></a></li>
+                        <li><a href=""><i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+                <div>
+                    <iframe width="600" height="450" style="border:0" loading="lazy" allowfullscreen
+                        referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed/v1/place?key=API_KEY
+              &q=Space+Needle,Seattle+WA">
+                    </iframe>
+                </div>
+            </div>
+            <div class="bottom">
+                <p>Made with ❤️ Team Prasang</p>
+            </div>
+        </footer>
+
+        <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script>
+            AOS.init({
+                duration: 1200,
+            })
+        </script>
 </body>
 
 </html>
