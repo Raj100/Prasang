@@ -45,7 +45,7 @@
 }
 .mandala-art{
     position: absolute;
-    width: 40vw;
+    width: 50vh;
     translate: -50%;
     -webkit-animation: spin 20s linear infinite;
     -moz-animation: spin 20s linear infinite;
@@ -58,7 +58,7 @@
     left: 100%;
     translate: -50%;
     position: absolute;
-    width: 40vw;
+    width: 50vh;
     overflow:hidden;
     -webkit-animation: spin 20s linear infinite;
     -moz-animation: spin 20s linear infinite;
@@ -78,3 +78,27 @@
     position: absolute;
     translate: -25%;
 }
+.center{
+    width: 300px;
+    padding: 5px;
+    margin: auto;
+    text-align: center;
+}
+.workshop{
+    display: flex;
+    background: blue;
+    justify-content: space-evenly;
+    flex-wrap: nowrap;
+}
+.workshop-box {
+    width: 350px;
+    height: 400px;
+    margin: 50px;
+    padding-top: 75px;
+    background: #ccc;
+    text-align: center;
+    color: #FFF;
+    font-size: 3em;
+    border-radius: 7px;
+    box-shadow: #ccc;
+  }
