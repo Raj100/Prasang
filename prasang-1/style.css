@@ -1,0 +1,80 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.body{
+    height: 200vh;
+    width: 100vw;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    background: rgba(51, 170, 51, .1);    
+    align-items: center;
+    padding: 0 50px;
+}
+.home{
+    width: 100vw;
+    height: 100vh;
+    background: white;
+    color: black;
+}
+.logo-top{
+    padding: 20px 0;
+}
+.logo{
+    width: 150px;
+    height: 150px;
+    padding: 5px;
+    margin: auto;
+}
+.navigation{
+    display: flex;
+}
+.navigation li{
+    list-style: none;
+    padding: 1px;
+    margin: 0 20px;
+    font-size: 20px;
+}
+.navigation li:hover{
+    color: orange;
+    transition: 0.3s linear;
+}
+.mandala-art{
+    position: absolute;
+    width: 40vw;
+    translate: -50%;
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear  infinite;
+}
+/* .mandala-art:hover{
+    translate: 360;
+} */
+.mandala-art-right{
+    left: 100%;
+    translate: -50%;
+    position: absolute;
+    width: 40vw;
+    overflow:hidden;
+    -webkit-animation: spin 20s linear infinite;
+    -moz-animation: spin 20s linear infinite;
+    animation: spin 20s linear  infinite;
+}
+/* .mandala-art-right:hover{
+    -webkit-animation: spin 30s linear infinite;
+    -moz-animation: spin 30s linear infinite;
+    animation: spin 30s linear  infinite;
+} */
+@-webkit-keyframes spin{
+    100%{-webkit-transform: rotate(360deg);}
+}
+.elephant-left{
+    top: 45vw;
+    height: 300px;
+    position: absolute;
+    translate: -25%;
+}
