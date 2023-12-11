@@ -2,10 +2,10 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: 'Times New Roman', Times, serif;
+    font-family: 'Prompt', sans-serif;
 }
 .body{
-    height: 200vh;
+    /* height: 200vh; */
     width: 100vw;
 }
 header{
@@ -23,20 +23,21 @@ header{
 header.sticky{
     padding: 5px 100px;
     background-color: #fff;
-    bottom: 1px solid black;
+    /* border-radius: 10% 77% 86% / 0% 0% 31% 31% ; */
+    border-radius: 10% 10% 77% 86% / 0% 0% 50% 50% ;
+    border: 1px solid rgba(249, 157, 28, 0.2);
 }
 .home{
+    position: relative;
+    overflow:hidden;
     margin-top: 100px;
     width: 100%; 
-    height: 100vh;
+    height: 400px;
     background: white;
     color: black;
     overflow-x: hidden;
     display: flex;
     flex-direction: column;
-}
-.welcome{
-    height: 40vh;
 }
 .logo-top{
     padding: 20px 0;
@@ -46,24 +47,31 @@ header.sticky{
     height: 200px;
     padding: 5px;
     margin: auto;
-    -webkit-animation: spin 50s linear infinite;
-    -moz-animation: spin 50s linear infinite;
-    animation: spin 50s linear  infinite;
-    z-index: 10000;
+    -webkit-animation: spin1 1s linear 1;
+    -moz-animation: spin1 1s linear 1;
+    animation: spin1 1s linear 1;
 }
 .logo-2{
     width: 250px;
     height: 200px;
     padding: 5px;
     margin: auto;
-    -webkit-animation: spin 50s linear infinite reverse;
-    -moz-animation: spin 50s linear infinite reverse;
-    animation: spin 50s linear  infinite reverse;
+    -webkit-animation: spin1 1s linear 1 reverse;
+    -moz-animation: spin1 1s linear 1 reverse;
+    animation: spin1 1s linear 1 reverse;
     translate: 0 -200%;
 }
+@-webkit-keyframes spin1{
+    100%{-webkit-transform: rotate(180deg);}
+}
+/* .logo:hover{
+        -webkit-animation: spin 50s linear infinite reverse;
+    -moz-animation: spin 50s linear infinite reverse;
+    animation: spin 50s linear  infinite reverse;
+} */
 .logo{
-    width: 250px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     padding: 5px;
     margin: auto;
 }
@@ -87,12 +95,6 @@ header.sticky{
 .navigation li:hover{
     color: orange;
     transition: 0.3s linear;
-}
-.upper{
-    position: relative;
-    width: 100vw;
-    height: 50vh;
-    overflow:hidden;
 }
 .mandala-art{
     position: absolute;
@@ -135,10 +137,17 @@ header.sticky{
 @-webkit-keyframes spin{
     100%{-webkit-transform: rotate(360deg);}
 }
+.layer4{
+    background: url(./Assets/stacked-waves-haikei\ \(2\).svg);
+}
+.layer5{
+    background: url(./Assets/wave-haikei\ \(2\).svg);
+}
 .welcome{
     position: relative;
+    background:#ffc397;
     width: 100vw;
-    height: 50vh;
+    height: calc(300 + 50vh);
     overflow:hidden;
 }
 .elephant-left{
@@ -162,7 +171,7 @@ header.sticky{
 }
 .events{
     display: flex;
-    background: #f18930;
+    /* background: #f18930; */
     justify-content: space-evenly;
     flex-wrap: wrap;
     overflow-x: hidden;
@@ -331,4 +340,25 @@ h3{
     /* border-radius:0% 10% 0% 10% / 0% 0% 49% 42%     ; */
     border: 1px solid rgba(0, 0, 0, 0.2);
     margin: 10px 0;
+    color: #f18930;
   }
+.spacer {
+    aspect-ratio: 2000/300;
+    width: 100vw;    
+    height: 300px; /* Adjust the height as needed */
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.competitions{
+    background-color: #f18930;
+}
+.layer1 {
+    background: url(./Assets/layered-waves-haikei\ \(5\).svg);
+}
+.layer2{
+    background: url(./Assets/stacked-peaks-haikei.svg);
+}
+.sponsors-spacer{
+    background: url(./Assets/wave-haikei\ \(1\).svg);
+}

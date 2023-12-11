@@ -1,0 +1,364 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Prompt', sans-serif;
+}
+.body{
+  /* height: 200vh; */
+  width: 100vw;
+}
+header{
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  padding: 40px 100px;
+  z-index: 100;
+}
+header.sticky{
+  padding: 5px 100px;
+  background-color: #fff;
+  /* border-radius: 10% 77% 86% / 0% 0% 31% 31% ; */
+  border-radius: 10% 10% 77% 86% / 0% 0% 50% 50% ;
+  border: 1px solid rgba(249, 157, 28, 0.2);
+}
+.home{
+  position: relative;
+  overflow:hidden;
+  margin-top: 100px;
+  width: 100%; 
+  height: 400px;
+  background: white;
+  color: black;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+}
+.logo-top{
+  padding: 20px 0;
+}
+.logo-1{
+  width: 250px;
+  height: 200px;
+  padding: 5px;
+  margin: auto;
+  -webkit-animation: spin1 1s linear 1;
+  -moz-animation: spin1 1s linear 1;
+  animation: spin1 1s linear 1;
+}
+.logo-2{
+  width: 250px;
+  height: 200px;
+  padding: 5px;
+  margin: auto;
+  -webkit-animation: spin1 1s linear 1 reverse;
+  -moz-animation: spin1 1s linear 1 reverse;
+  animation: spin1 1s linear 1 reverse;
+  translate: 0 -200%;
+}
+@-webkit-keyframes spin1{
+  100%{-webkit-transform: rotate(180deg);}
+}
+/* .logo:hover{
+      -webkit-animation: spin 50s linear infinite reverse;
+  -moz-animation: spin 50s linear infinite reverse;
+  animation: spin 50s linear  infinite reverse;
+} */
+.logo{
+  width: 300px;
+  height: 300px;
+  padding: 5px;
+  margin: auto;
+}
+.logo-text{
+  width: 250px;
+  height: 200px;
+  padding: 5px;
+  margin: auto;
+  translate: 0 -100%;
+  z-index: 10000;
+}
+.navigation{
+  display: flex;
+}
+.navigation li{
+  list-style: none;
+  padding: 1px;
+  margin: 0 20px;
+  font-size: 20px;
+}
+.navigation li:hover{
+  color: orange;
+  transition: 0.3s linear;
+}
+.mandala-art{
+  position: absolute;
+  width: 400px;
+  translate: -50%;
+  -webkit-animation: spin 20s linear infinite;
+  -moz-animation: spin 20s linear infinite;
+  animation: spin 20s linear  infinite;
+}
+/* .mandala-art:hover{
+  translate: 360;
+} */
+/* .mandala-art-right{
+  right: 0;
+  translate: -50%;
+  position: absolute;
+  width: 50vh;
+  overflow:hidden;
+  -webkit-animation: spin 20s linear infinite;
+  -moz-animation: spin 20s linear infinite;
+  animation: spin 20s linear  infinite;
+} */
+.mandala-art-right {
+  /* margin-left: calc(100vw - 200px);     */
+  left: 100%;
+  translate: -50%;
+  width: 400px;
+  /* overflow:hidden; */
+  position: absolute;
+  -webkit-animation: spin 20s linear infinite reverse;
+  -moz-animation: spin 20s linear infinite reverse;
+  animation: spin 20s linear infinite reverse;
+
+}
+/* .mandala-art-right:hover{
+  -webkit-animation: spin 30s linear infinite;
+  -moz-animation: spin 30s linear infinite;
+  animation: spin 30s linear  infinite;
+} */
+@-webkit-keyframes spin{
+  100%{-webkit-transform: rotate(360deg);}
+}
+.layer4{
+  background: url(./Assets/home-spacer.svg);
+}
+.layer5{
+  background: url(./Assets/welcome-spacer.svg);
+}
+.welcome{
+  position: relative;
+  background:#ffc397;
+  width: 100vw;
+  height: calc(300 + 50vh);
+  overflow:hidden;
+}
+.elephant-left{
+  height: 300px;
+  position: absolute;
+  translate: -25%;
+}
+.elephant-right{
+  width: 300px;
+  height: 300px;
+  left: 100%;
+  position: absolute;
+  overflow-x: hidden;
+  translate: -75%;
+}
+.center{
+  width: 50vw;
+  padding: 5px;
+  margin: auto;
+  text-align: center;
+}
+.events{
+  display: flex;
+  /* background: #f18930; */
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  overflow-x: hidden;
+}
+.events-box {
+  width: 350px;
+  height: 400px;
+  margin: 50px;
+  padding: 15px;
+  background: #ccc;
+  text-align: center;
+  /* color: #FFF; */
+  border-radius: 7px;
+  box-shadow: #ccc;
+}
+.events-box {
+  background-color: transparent;
+  width: 300px;
+  height: 200px;
+  border: 1px solid #f1f1f1;
+  /* perspective: 1000px; Remove this if you don't want the 3D effect */
+}
+.event-img{
+  width: 300px;
+  height: 200px;
+}
+/* This container is needed to position the front and back side */
+.event-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+}
+
+/* Do an horizontal flip when you move the mouse over the flip box container */
+.events-box:hover .event-content {
+  transform: rotateY(180deg);
+}
+
+/* Position the front and back side */
+.event-front, .event-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden; /* Safari */
+  backface-visibility: hidden;
+}
+
+/* Style the front side (fallback if image is missing) */
+.event-front {
+  background-color: #bbb;
+  color: black;
+}
+
+/* Style the back side */
+.event-back {
+  background-color: dodgerblue;
+  color: white;
+  transform: rotateY(180deg);
+}
+
+
+footer{
+  background: #3f3f3f;
+  padding-top: 50px;
+  color: white;
+}
+.row{
+  display: flex;
+  padding: auto;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.social{
+  text-align: center;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social i{
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+}
+.social i:hover{
+  color: #f18930;
+}
+h3{
+  font-size: 28px;
+  margin: 15px 0px;
+  text-align: center;
+}
+.col{
+  padding: 0 20px;
+}
+.col a{
+  color: white;
+}
+.col a i{
+  padding: 5px;
+}
+.bottom{
+  background: black;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}
+
+.wrapper {
+  max-width: 75%;
+  margin: auto;
+}
+
+.wrapper > p,
+.wrapper > h1 {
+  margin: 1.5rem 0;
+  text-align: center;
+}
+
+.wrapper > h1 {
+  letter-spacing: 3px;
+}
+
+.accordion {
+  background-color: white;
+  color: rgba(0, 0, 0, 0.8);
+  cursor: pointer;
+  font-size: 1.2rem;
+  width: 100%;
+  padding: 2rem 2.5rem;
+  border: none;
+  outline: none;
+  transition: 0.4s;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+}
+
+.accordion i {
+  font-size: 1.6rem;
+}
+
+.active,
+.accordion:hover {
+  background-color: #3f3f3f;
+  color: white;
+}
+.pannel {
+  padding: 0 2rem 2.5rem 2rem;
+  /* background-color: black; */
+  overflow: hidden;
+  /* background-color: #3f3f3f; */
+  display: none;
+}
+.pannel p {
+  color: rgb(255, 255, 255);
+  font-size: 1.2rem;
+  line-height: 1.4;
+}
+
+.faq {
+  /* border-radius:0% 10% 0% 10% / 0% 0% 49% 42%     ; */
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  margin: 10px 0;
+  color: #f18930;
+}
+.spacer {
+  aspect-ratio: 2000/300;
+  width: 100vw;    
+  height: 300px; /* Adjust the height as needed */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.competitions{
+  background-color: #f18930;
+}
+.layer1 {
+  background: url(./Assets/Worshop-top.svg);
+}
+.layer2{
+  background: url(./Assets/Workshop-bottom.svg);
+}
+.sponsors-spacer{
+  background: url(./Assets/Sponsor-top.svg);
+}
