@@ -64,44 +64,41 @@ const Home = () => {
     <div className="home" id="Home">
       {/* <img className="mandala-art" src={teslacoil} alt="" width="400" height="400"/>
     <img className="mandala-art-right" src={teslacoil} alt=""width="400px" height="400"/> */}
-    <div class="electricity">
-        <div class="plus-diode">
-          <div class="ball">
-            <div class="shine"></div>
-          </div>
-          <div class="socket"></div>
-          <div class="socket foot"></div>
-          <div class="ring"></div>
-          <div class="ring medium"></div>
-          <div class="ring small"></div>
-        </div>
-        <div class="minus-diode">
-          <div class="ball">
-            <div class="shine"></div>
-          </div>
-          <div class="socket"></div>
-          <div class="socket foot"></div>
-          <div class="ring"></div>
-          <div class="ring medium"></div>
-          <div class="ring small"></div>
-        </div>
-        <svg id="svg" viewBox="0 0 500 200">
-          <defs>
-            <filter id="f1" x="0" y="0">
-              <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
-            </filter>
-          </defs>
-          <g>
-            <path
-              d="M0,100,500,100"
-              fill="none"
-              stroke="#42ee77"
-              filter="url(#f1)"
-            ></path>
-            <path d="M0,100,500,100" fill="none" stroke="#ffcc02"></path>
-          </g>
-        </svg>
-      </div>
+
+<div class="electricity">
+  <div class="plus-diode">
+    <div class="ball">
+      <div class="shine"></div>
+    </div>
+    <div class="socket"></div>
+    <div class="socket foot"></div>
+    <div class="ring"></div>
+    <div class="ring medium"></div>
+    <div class="ring small"></div>
+  </div>
+  <div class="minus-diode">
+    <div class="ball">
+      <div class="shine"></div>
+    </div>
+    <div class="socket"></div>
+    <div class="socket foot"></div>
+    <div class="ring"></div>
+    <div class="ring medium"></div>
+    <div class="ring small"></div>
+  </div>
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 200">
+    <defs>
+    <filter id="f1" x="0" y="0">
+      <feGaussianBlur in="SourceGraphic" stdDeviation="5" />
+    </filter>
+  </defs>
+    <g>
+      <path d="M0,100,500,100" fill="none" stroke="#ffcd00" filter="url(#f1)"></path>
+      <path d="M0,100,500,100" fill="none" stroke="#ffcd00"></path>
+    </g>
+  </svg>
+
+</div>
 
       <svg
         className="Lightning-left "

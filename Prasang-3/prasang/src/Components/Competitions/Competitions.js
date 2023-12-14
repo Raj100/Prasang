@@ -11,7 +11,7 @@ const Competitions = () => {
     });
   }, []);
   return (
-    <div id='Competitions'>
+    <div id='Events'>
       <div className="Competitions-top spacer"></div>
       <h1 className="center">Competitions</h1>
       <div className="events">
