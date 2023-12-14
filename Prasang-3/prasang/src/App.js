@@ -1,9 +1,7 @@
-// import logo from './logo.svg';
 import './App.css';
 import Navbar from "./Components/Navbar/Navbar";
 import Home from "./Components/Home/Home";
-import Welcome from "./Components/Welcome/Welcome"
-import Workshops from "./Components/Workshops/Workshops";
+import Workshops from "./Components/Workshops";
 import Competitions from "./Components/Competitions/Competitions";
 import Sponsors from './Components/Sponsors/Sponsors'
 import FAQs from './Components/FAQs/FAQs'
@@ -23,7 +21,6 @@ function App() {
     <>
     <Navbar></Navbar>
     <Home/>
-    <Welcome></Welcome>
     <Workshops></Workshops>
     <Competitions></Competitions>
     <Sponsors></Sponsors>

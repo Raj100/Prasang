@@ -3,7 +3,7 @@ import React from 'react'
 const Welcome = () => {
   return (
     <div>
-    <div class="welcome">
+    <div class="welcome" id='Welcome'>
     <div class="spacer layer4"> </div>
     {/* <!-- <img class="elephant-left" data-aos="fade-up" src="./Assets/RXNqiur2_400x400.png" alt="">
       <img class="elephant-right" data-aos="fade-up" src="./Assets/right-elephant.png" alt=""> --> */}

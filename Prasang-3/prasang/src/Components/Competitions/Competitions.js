@@ -2,6 +2,7 @@ import React from "react";
 import AOS from "aos";
 import "aos/dist/aos";
 import { useEffect } from "react";
+import { Link } from "react-router-dom";
 
 const Competitions = () => {
   useEffect(() => {
@@ -10,8 +11,9 @@ const Competitions = () => {
     });
   }, []);
   return (
-    <div className="competitions">
-      <h2 className="center">Competitions</h2>
+    <div id='Competitions'>
+      <div className="Competitions-top spacer"></div>
+      <h1 className="center">Competitions</h1>
       <div className="events">
         <div className="events-box" data-aos="fade-right">
           <h1>Code sprint</h1>
@@ -23,9 +25,9 @@ const Competitions = () => {
               />
             </div>
             <div className="event-back">
-              <h1>Architect & Engineer</h1>
+              <h1>Code sprint</h1>
               <p>Register for Code sprint competition</p>
-              <button>Register</button>
+              <Link to="/Code sprint"><button>Register</button></Link>
             </div>
           </div>
         </div>
@@ -42,7 +44,7 @@ const Competitions = () => {
             <div class="event-back">
               <h1></h1>
               <p>Architect & Engineer</p>
-              <button>Register</button>
+              <button><Link to="/CodeCombat">Register </Link></button>
             </div>
           </div>
         </div>
@@ -108,7 +110,7 @@ const Competitions = () => {
           </div>
           <div class="event-back">
             <h1> </h1>
-            <p>Architect & Engineer</p>
+            <p></p>
             <button>Register</button>
           </div>
         </div>
