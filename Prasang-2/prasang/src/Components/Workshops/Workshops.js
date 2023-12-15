@@ -1,4 +1,3 @@
-// components/Workshops.js
 import React from 'react';
 
 const Workshops = () => {

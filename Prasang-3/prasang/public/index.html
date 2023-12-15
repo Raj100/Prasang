@@ -28,7 +28,7 @@
   <script src="
   https://cdn.jsdelivr.net/npm/kute.js@2.2.4/dist/kute.min.js
   "></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.3/gsap.min.js"></script>
+
 </head>
 
 <body>
@@ -46,7 +46,7 @@
     -->
 
 
-  <script>
+  <!-- <script>
     var acc = document.getElementsByClassName("accordion");
     var i;
 
@@ -64,9 +64,9 @@
         }
       });
     }
-  </script>
+  </script> -->
 
-  <script type="text/javascript">
+  <!-- <script type="text/javascript">
     window.addEventListener('scroll', function () {
       var header = document.querySelector("header");
       header.classList.toggle('sticky', window, scrollY > 0);
@@ -78,7 +78,8 @@
     AOS.init({
       duration: 1200,
     })
-  </script>
+  </script> -->
+
   <!-- <script>
     setInterval(light, 500);
     function light() {
@@ -124,7 +125,7 @@
     }
   </script> -->
 
-  <script>
+  <!-- <script>
     const raj = KUTE.fromTo(
       '#Lightning1',
       { path: '#Lightning1' },
@@ -137,47 +138,36 @@
       { path: '#Lightning2' },
       { repeat: 999, duration: 1000, yoyo: true }
     ).start();
-  </script>
-  <script>
-    let button = document.querySelector("button");
+  </script> -->
 
-let rough = new RoughEase({
-  strength: 3,
-  points: 30,
-  taper: "none",
-  randomize: true
-});
-
-let tl = gsap.timeline({
-  defaults: { duration: 2, ease: "sine.out" },
-  paused: true
-});
-
-let strikes = gsap.utils.toArray(".strike");
-
-tl.to("#lightning", { opacity: 1, duration: 0.1 })
-  .to(".border-gradient", { opacity: 1 })
-  .to("#filter feDisplacementMap", { attr: { scale: "10" }, ease: "rough" }, 0)
-  .to("#filter2 feDisplacementMap", { attr: { scale: "30" }, ease: "rough" }, 0)
-  .to("#filter4 feDisplacementMap", { attr: { scale: "40" }, ease: "rough" }, 0)
-  .fromTo(strikes[0], { drawSVG: "100% 90%" }, { drawSVG: "0% 10%" }, 0)
-  .fromTo(strikes[1], { drawSVG: "0% 20%" }, { drawSVG: "100% 100%" }, 0)
-  .fromTo(strikes[2], { drawSVG: "0% 10%" }, { drawSVG: "135% 140%" }, 0)
-  .fromTo(strikes[3], { drawSVG: "120% 140%" }, { drawSVG: "35% 40%" }, 0)
-  .fromTo(strikes[4], { drawSVG: "20% 40%" }, { drawSVG: "135% 140%" }, 0)
-  .to("#lightning", { opacity: 0, duration: 0.3 }, "-=0.4");
-
-button.addEventListener("mouseenter", function () {
-  gsap.to("#scribbles", { opacity: 1, duration: 0.3, ease: "sine.out" });
-  tl.play(0);
-});
-
-button.addEventListener("mouseleave", function () {
-  gsap.to("#scribbles", { opacity: 0, duration: 0.6, ease: "sine.out" });
-  tl.reverse();
-});
-
-  </script>
+  <!-- <script>
+    document.querySelector(".technical-event-button").addEventListener("click", technicalEvent);
+    document.querySelector(".sports-event-button").addEventListener("click", culture);
+    document.querySelector(".cultural-event-button").addEventListener("click", sports);
+  
+    let techEvent = document.querySelector('.technical-event');
+    let sportEvent = document.querySelector('.sports-event');
+    let cultEvent = document.querySelector('.cultural-event');
+  
+    function technicalEvent() {
+      sportEvent.style.visibility = "hidden";
+      cultEvent.style.visibility = "hidden";
+      techEvent.style.visibility = "visible";
+    }
+  
+    function culture() {
+      sportEvent.style.visibility = "hidden";
+      cultEvent.style.visibility = "visible";
+      techEvent.style.visibility = "hidden";
+    }
+  
+    function sports() {
+      sportEvent.style.visibility = "visible";
+      cultEvent.style.visibility = "hidden";
+      techEvent.style.visibility = "hidden";
+    }
+  </script> -->
+  
 </body>
 
 </html>

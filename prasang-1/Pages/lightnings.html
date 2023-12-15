@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://cdn.jsdelivr.net/npm/kute.js@2.1.2/dist/kute.min.js"></script>
+</head>
+
+<body>
+    <svg id="visual" className="mandala-art" viewBox="0 0 100 2000" width="100" height="2000">
+        <g>
+            <path id="Lightning1"
+                d="M38 2000L17 1889L32 1778L49 1667L5 1556L14 1444L13 1333L35 1222L10 1111L7 1000L6 889L17 778L2 667L26 556L81 444L23 333L67 222L58 111L60 0L99 0L86 111L76 222L58 333L90 444L40 556L41 667L58 778L48 889L45 1000L47 1111L64 1222L58 1333L35 1444L45 1556L87 1667L72 1778L37 1889L59 2000Z"
+                fill="#fecc02"></path>
+            <path id="Lightning2" style="visibility: hidden;"
+                d="M41 2000L1 1889L33 1778L2 1667L27 1556L44 1444L4 1333L29 1222L15 1111L32 1000L9 889L30 778L20 667L23 556L8 444L41 333L27 222L26 111L29 0L82 0L88 111L28 222L82 333L68 444L51 556L35 667L80 778L42 889L85 1000L93 1111L66 1222L27 1333L99 1444L91 1556L55 1667L44 1778L3 1889L81 2000Z"
+                fill="#fecc02"></path>
+            <path id="Lightning3" style="visibility: hidden;"
+                d="M17 2000L31 1889L36 1778L29 1667L10 1556L8 1444L47 1333L6 1222L5 1111L10 1000L43 889L42 778L38 667L38 556L9 444L23 333L35 222L29 111L43 0L58 0L76 111L84 222L60 333L24 444L80 556L70 667L61 778L93 889L47 1000L40 1111L38 1222L95 1333L9 1444L45 1556L79 1667L47 1778L38 1889L64 2000Z"
+                fill="#fecc02"></path>
+        </g>
+    </svg>
+    <p id="demo"></p>
+    <script>
+        //     const raj = KUTE.fromTo(
+        //     '#Lightning1',
+        //     { path: '#Lightning1' },
+        //     { path: '#Lightning3' },
+        //     { repeat: 999, duration: 500   , yoyo: true }
+        // ).start();
+        // const rajj = KUTE.fromTo(
+        //     '#Lightning1',
+        //     { path: '#Lightning1' },
+        //     { path: '#Lightning2' },
+        //     { repeat: 999, duration: 1000   , yoyo: true }
+        // ).start();
+
+        // let's morph a Lightning into a star
+        // var tween1 = KUTE.to('#Lightning1', { path: '#Lightning3' }, { repeat: 999, duration: 1000   , yoyo: true }).start();
+
+        // or same path into a square
+        // var tween2 = KUTE.to('#Lightning1', { path: '#Lightning2' }, { repeat: 999, duration: 1000   , yoyo: true }).start();
+        // const rajjj = KUTE.fromTo(
+        //     '#Lightning1',
+        //     { path: '#Lightning1' },
+        //     { path: '#Lightning1' },
+        //     { repeat: 999, duration: 1000   , yoyo: true }
+        // ).start();
+
+        var morphTween21 = KUTE.fromTo('#Lightning1', { attr: { fill: '#673AB7' }, path: '#Lightning1' }, { attr: { fill: '#2196F3' }, path: '#Lightning1' }, {
+            duration: 1500, easing: 'easingCubicOut'
+        });
+        var morphTween22 = KUTE.fromTo('#Lightning1', { path: '#Lightning2', attr: { fill: '#2196F3' } }, { path: '#star2', attr: { fill: 'deeppink' } }, {
+            delay: 500, duration: 1500, easing: 'easingCubicOut'
+        });
+        var morphTween23 = KUTE.fromTo('#Lightning1', { path: '#Lightning3', attr: { fill: 'deeppink' } }, { path: '#Lightning1', attr: { fill: '#673AB7' } }, {
+            delay: 500, duration: 1500, easing: 'easingCubicOut'
+        });
+        var morphTween24 = KUTE.fromTo('#Lightning1', { path: '#Lightning2', attr: { fill: '#673AB7' } }, { path: '#cat', attr: { fill: 'darkorange' } }, {
+            delay: 500, duration: 1500, easing: 'easingCubicOut'
+        });
+        var morphTween25 = KUTE.fromTo('#Lightning1', { path: '#lightning1', attr: { fill: 'darkorange' } }, { path: '#Lightning1', attr: { fill: '#673AB7' } }, {
+            delay: 500, duration: 1500, easing: 'easingCubicOut'
+        });
+
+        try {
+            morphTween21.chain(morphTween22);
+            morphTween22.chain(morphTween23);
+            morphTween23.chain(morphTween24);
+            morphTween24.chain(morphTween25);
+            morphTween25.chain(morphTween21);
+        } catch (e) {
+            console.error(e + "TweenBase doesn\'t support chain method")
+        }
+
+
+        // setInterval(light, 1000);
+        // function light() {
+        //     const light1 = document.getElementById("Lightning1");
+        //     const light2 = document.getElementById("Lightning2");
+        //     if (light1.style.visibility === "hidden") {
+        //         light1.style.visibility = "visible";
+        //         light2.style.visibility = "hidden";
+        //     }
+        //     else {
+        //         light1.style.visibility = "hidden";
+        //         light2.style.visibility = "visible";
+        //     }
+        //     //     const d = new Date();
+        //     //   document.getElementById("demo").innerHTML = d.toLocaleTimeString();
+        // }
+    </script>
+
+    <svg id="visual" viewBox="0 0 100 2000" width="100" height="2000" version="1.1">
+        <path
+            d="M79 2000L51 1833L21 1667L17 1500L21 1333L21 1167L21 1000L2 833L49 667L69 500L49 333L32 167L43 0L63 0L33 167L59 333L80 500L88 667L30 833L35 1000L52 1167L35 1333L46 1500L71 1667L67 1833L94 2000Z"
+            fill="#fecc02"></path>
+    </svg>
+
+    <svg id="visual" viewBox="0 0 100 2000" width="100" height="2000" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <path
+            d="M55 2000L88 1889L73 1778L77 1667L40 1556L13 1444L76 1333L52 1222L74 1111L76 1000L43 889L83 778L84 667L95 556L84 444L51 333L52 222L79 111L37 0L100 0L100 111L100 222L100 333L100 444L100 556L100 667L100 778L100 889L100 1000L100 1111L100 1222L100 1333L100 1444L100 1556L100 1667L100 1778L100 1889L100 2000Z"
+            fill="#001220"></path>
+        <path
+            d="M16 2000L57 1889L56 1778L48 1667L8 1556L12 1444L29 1333L7 1222L32 1111L69 1000L14 889L35 778L84 667L50 556L39 444L11 333L5 222L53 111L27 0L38 0L80 111L53 222L52 333L85 444L96 556L85 667L84 778L44 889L77 1000L75 1111L53 1222L77 1333L14 1444L41 1556L78 1667L74 1778L89 1889L56 2000Z"
+            fill="#fecc02"></path>
+        <path
+            d="M0 2000L0 1889L0 1778L0 1667L0 1556L0 1444L0 1333L0 1222L0 1111L0 1000L0 889L0 778L0 667L0 556L0 444L0 333L0 222L0 111L0 0L28 0L54 111L6 222L12 333L40 444L51 556L85 667L36 778L15 889L70 1000L33 1111L8 1222L30 1333L13 1444L9 1556L49 1667L57 1778L58 1889L17 2000Z"
+            fill="#001220"></path>
+    </svg>
+
+
+    <svg id="visual" viewBox="0 0 100 2000" width="100" height="2000" version="1.1">
+        <path
+            d="M17 2000L31 1889L36 1778L29 1667L10 1556L8 1444L47 1333L6 1222L5 1111L10 1000L43 889L42 778L38 667L38 556L9 444L23 333L35 222L29 111L43 0L58 0L76 111L84 222L60 333L24 444L80 556L70 667L61 778L93 889L47 1000L40 1111L38 1222L95 1333L9 1444L45 1556L79 1667L47 1778L38 1889L64 2000Z"
+            fill="#fecc02"></path>
+    </svg>
+
+
+
+    <svg id="visual" viewBox="0 0 100 2000" width="100" height="2000" xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <path
+            d="M55 2000L88 1889L73 1778L77 1667L40 1556L13 1444L76 1333L52 1222L74 1111L76 1000L43 889L83 778L84 667L95 556L84 444L51 333L52 222L79 111L37 0L100 0L100 111L100 222L100 333L100 444L100 556L100 667L100 778L100 889L100 1000L100 1111L100 1222L100 1333L100 1444L100 1556L100 1667L100 1778L100 1889L100 2000Z"
+            fill="#001220"></path>
+        <path
+            d="M16 2000L57 1889L56 1778L48 1667L8 1556L12 1444L29 1333L7 1222L32 1111L69 1000L14 889L35 778L84 667L50 556L39 444L11 333L5 222L53 111L27 0L38 0L80 111L53 222L52 333L85 444L96 556L85 667L84 778L44 889L77 1000L75 1111L53 1222L77 1333L14 1444L41 1556L78 1667L74 1778L89 1889L56 2000Z"
+            fill="#fecc02"></path>
+        <path
+            d="M0 2000L0 1889L0 1778L0 1667L0 1556L0 1444L0 1333L0 1222L0 1111L0 1000L0 889L0 778L0 667L0 556L0 444L0 333L0 222L0 111L0 0L28 0L54 111L6 222L12 333L40 444L51 556L85 667L36 778L15 889L70 1000L33 1111L8 1222L30 1333L13 1444L9 1556L49 1667L57 1778L58 1889L17 2000Z"
+            fill="#001220"></path>
+    </svg>
+
+    <svg class="blob-motion" id="visual" viewBox="0 0 960 540" width="960" height="540"
+        xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1">
+        <g>
+            <path id="blob1"
+                d="M38 2000L17 1889L32 1778L49 1667L5 1556L14 1444L13 1333L35 1222L10 1111L7 1000L6 889L17 778L2 667L26 556L81 444L23 333L67 222L58 111L60 0L99 0L86 111L76 222L58 333L90 444L40 556L41 667L58 778L48 889L45 1000L47 1111L64 1222L58 1333L35 1444L45 1556L87 1667L72 1778L37 1889L59 2000Z"
+                fill="#fecc02"></path>
+        </g>
+        <g style="visibility: hidden">
+            <path id="blob2"
+                d="M41 2000L1 1889L33 1778L2 1667L27 1556L44 1444L4 1333L29 1222L15 1111L32 1000L9 889L30 778L20 667L23 556L8 444L41 333L27 222L26 111L29 0L82 0L88 111L28 222L82 333L68 444L51 556L35 667L80 778L42 889L85 1000L93 1111L66 1222L27 1333L99 1444L91 1556L55 1667L44 1778L3 1889L81 2000Z"
+                fill="#fecc02"></path>
+        </g>
+    </svg>
+
+    <script>
+        const tween = KUTE.fromTo(
+            '#blob1',
+            { path: '#blob1' },
+            { path: '#blob2' },
+            { repeat: 999, duration: 3000, yoyo: true }
+        ).start();
+    </script>
+</body>
+
+</html>

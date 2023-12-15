@@ -6,66 +6,113 @@ import "./Home.css";
 // import prasang2 from "../Assets/prasang-2.png";
 // import teslacoil from "../Assets/Tesla-coil.png";
 import { useEffect } from "react";
-class Electricity {
-  constructor(selector) {
-    this.svg = document.querySelector(selector);
-    this.run();
-  }
+// class Electricity {
+//   constructor(selector) {
+//     this.svg = document.querySelector(selector);
+//     this.run();
+//   }
 
-  render(iteration) {
-    let d = this.calculatePoints(0, 0, 500, 80, iteration);
-    this.svg.querySelector('g path:first-child').setAttribute('d', d);
-    this.svg.querySelector('g path:last-child').setAttribute('d', d);
-  }
+//   render(iteration) {
+//     let d = this.calculatePoints(0, 0, 500, 80, iteration);
+//     this.svg.querySelector('g path:first-child').setAttribute('d', d);
+//     this.svg.querySelector('g path:last-child').setAttribute('d', d);
+//   }
 
-  calculatePoints(x, y, width, height, iteration) {
-    let points = [[x, height / 2]];
-    let maxPoints = 10;
-    let chunkRange = width / maxPoints;
-    for(let i = 0; i < maxPoints; i++) {
-      let cx = chunkRange * i + (Math.cos(iteration + i) * chunkRange);
-      let cy = Math.random() * height/1.5;
-      points.push([cx, cy]);
-    }
+//   calculatePoints(x, y, width, height, iteration) {
+//     let points = [[x, height / 2]];
+//     let maxPoints = 10;
+//     let chunkRange = width / maxPoints;
+//     for(let i = 0; i < maxPoints; i++) {
+//       let cx = chunkRange * i + (Math.cos(iteration + i) * chunkRange);
+//       let cy = Math.random() * height/1.5;
+//       points.push([cx, cy]);
+//     }
     
-    points.push([width, height / 2]);
+//     points.push([width, height / 2]);
     
-    let d = points.map((point) => point.join(','));
-    return 'M' + d.join(',');
-  }
+//     let d = points.map((point) => point.join(','));
+//     return 'M' + d.join(',');
+//   }
 
-  run() {
-    let fps = 25,
-        now,
-        delta,
-        then = Date.now(),
-        interval = 1000 / fps,
-        iteration = 0,
-        loop = () => {
-          requestAnimationFrame(loop);
+//   run() {
+//     let fps = 25,
+//         now,
+//         delta,
+//         then = Date.now(),
+//         interval = 1000 / fps,
+//         iteration = 0,
+//         loop = () => {
+//           requestAnimationFrame(loop);
 
-          now = Date.now();
-          delta = now - then;
-          if (delta > interval) {
-            then = now - (delta % interval);
+//           now = Date.now();
+//           delta = now - then;
+//           if (delta > interval) {
+//             then = now - (delta % interval);
 
-            // update stuff
-            this.render(iteration++);
-          }
-        };
-    loop();
-  }
-}
+//             // update stuff
+//             this.render(iteration++);
+//           }
+//         };
+//     loop();
+//   }
+// }
 const Home = () => {
-  useEffect(() => {
-    new Electricity('.electricity svg');
-  }, []);
+  // useEffect(() => {
+  //   new Electricity('.electricity svg');
+  // }, []);
+  setInterval(light, 500);
+
+  function light() {
+    const light1 = document.getElementById("Lightning1");
+    const light2 = document.getElementById("Lightning2");
+    const light3 = document.getElementById("Lightning3");
+
+    if (light1 && light2 && light3) {
+      if (light1.style.visibility === "visible") {
+        light1.style.visibility = "hidden";
+        light2.style.visibility = "visible";
+        light3.style.visibility = "hidden";
+      } else if (light2.style.visibility === "visible") {
+        light1.style.visibility = "hidden";
+        light2.style.visibility = "hidden";
+        light3.style.visibility = "visible";
+      } else {
+        light1.style.visibility = "visible";
+        light2.style.visibility = "hidden";
+        light3.style.visibility = "hidden";
+      }
+    }
+  }
+
+  setInterval(lightRight, 500);
+
+  function lightRight() {
+    const light1 = document.getElementById("Lightning-1-right");
+    const light2 = document.getElementById("Lightning-2-right");
+    const light3 = document.getElementById("Lightning-3-right");
+
+    if (light1 && light2 && light3) {
+      if (light1.style.visibility === "visible") {
+        light1.style.visibility = "hidden";
+        light2.style.visibility = "visible";
+        light3.style.visibility = "hidden";
+      } else if (light2.style.visibility === "visible") {
+        light1.style.visibility = "hidden";
+        light2.style.visibility = "hidden";
+        light3.style.visibility = "visible";
+      } else {
+        light1.style.visibility = "visible";
+        light2.style.visibility = "hidden";
+        light3.style.visibility = "hidden";
+      }
+    }
+  }
   return (
     <div className="home" id="Home">
       {/* <img className="mandala-art" src={teslacoil} alt="" width="400" height="400"/>
     <img className="mandala-art-right" src={teslacoil} alt=""width="400px" height="400"/> */}
 
-<div class="electricity">
+{/* <div class="electricity">
   <div class="plus-diode">
     <div class="ball">
       <div class="shine"></div>
@@ -97,8 +144,8 @@ const Home = () => {
       <path d="M0,100,500,100" fill="none" stroke="#ffcd00"></path>
     </g>
   </svg>
-
 </div>
+*/}
 
       <svg
         className="Lightning-left "
@@ -148,7 +195,8 @@ const Home = () => {
           fill="#fecc02"
         ></path>
       </svg>
-      <div>
+
+      <div> 
         <div className="logo">
           <h1>PraSang</h1>
           <p>Organised by EEE Department NIT GOA </p>

@@ -3,9 +3,9 @@ import React from 'react';
 
 const FAQs = () => {
   return (
-    <div className="Faqs wrapper">
-      <h1>Frequently Asked Questions</h1>
-
+    <div className='Faqs'>
+      <h1 className='center'>Frequently Asked Questions</h1>
+    <div className=" wrapper">
       <div className="faq" data-aos="fade-up">
         <button className="accordion">
           Who can participate?
@@ -34,7 +34,8 @@ const FAQs = () => {
         </div>
       </div>
 
-      {/* Add more FAQ items as needed */}
+
+    </div>
     </div>
   );
 };

@@ -1,5 +1,4 @@
-// components/Competitions.js
-import React from 'react';
+ import React from 'react';
 
 const Competitions = () => {
   return (
