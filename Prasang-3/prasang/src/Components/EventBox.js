@@ -1,33 +1,38 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
-import ElectricButton from './ElectricButton'; // Make sure to import ElectricButton if it's a separate component
-import PropTypes from 'prop-types'; // Import PropTypes for prop type checking
+import React from "react";
+import { Link } from "react-router-dom";
+import ElectricButton from "./ElectricButton";
+import PropTypes from "prop-types";
 
-const EventBox = ({ eventName, eventImgSrc, eventRole,eventLink }) => {
+const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
   return (
     <div>
-        <div className='event-holder' data-aos="fade-up">
+      <div className="event-holder" data-aos="fade-up">
         <h1>{eventName}</h1>
-      <div className="events-box" >
-        <div className="event-content">
-          <div className="event-front">
-            <img className="event-img" src={eventImgSrc} alt={`${eventName} Image`} />
-          </div>
-          <div className="event-back">
-            <h1>{eventName}</h1>
-            <p>{eventRole}</p>
-            <Link to={`/${eventLink}`}>
-              <ElectricButton />
-            </Link>
+        <div className="events-box">
+          <div className="event-content">
+            <div className="event-front">
+              <img
+                className="event-img"
+                src={eventImgSrc}
+                alt={`${eventName} Image`}
+              />
+            </div>
+            <div className="event-back">
+              <p></p>
+              <p> {eventRole}</p>
+              <div className="Register">
+                <Link to={`/${eventLink}`}>
+                  <ElectricButton ButtonName="More info"></ElectricButton>
+                </Link>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    </div>
   );
 };
 
-// Prop types for type checking
 EventBox.propTypes = {
   eventName: PropTypes.string.isRequired,
   eventImgSrc: PropTypes.string.isRequired,

@@ -1,4 +1,3 @@
-// components/Sponsors.js
 import React from 'react';
 
 const Sponsors = () => {

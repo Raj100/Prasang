@@ -1,17 +1,17 @@
 import React from "react";
-
-const ElectricButton = () => {
+import PropTypes from "prop-types"
+const ElectricButton = ({ ButtonName}) => {
   return (
-    <div className="Register2">
+    <div className=".electric-button">
     <div className="buttonHolder ">
-      <button class="electric" id="electric">
-        <span class="part hide" id="part1"></span>
-        <span class="part hide" id="part2"></span>
-        <span class="part hide" id="part3"></span>
-        <span class="part hide" id="part4"></span>
+      <button className="electric"  id="electric">
+        <span className="part hide" id="part1"></span>
+        <span className="part hide" id="part2"></span>
+        <span className="part hide" id="part3"></span>
+        <span className="part hide" id="part4"></span>
         <svg
           id="y1"
-          class="yellow hide"
+          className="yellow hide"
           width="415"
           height="181"
           viewBox="0 0 415 181"
@@ -26,7 +26,7 @@ const ElectricButton = () => {
         </svg>
         <svg
           id="y2"
-          class="yellow yellow-glow hide"
+          className="yellow yellow-glow hide"
           width="461"
           height="227"
           viewBox="0 0 461 227"
@@ -67,7 +67,7 @@ const ElectricButton = () => {
         </svg>
         <svg
           id="b1"
-          class="blue hide"
+          className="blue hide"
           width="423"
           height="192"
           viewBox="0 0 423 192"
@@ -82,7 +82,7 @@ const ElectricButton = () => {
           />
         </svg>
         <svg
-          class="blue hide"
+          className="blue hide"
           id="b2"
           width="470"
           height="240"
@@ -123,12 +123,11 @@ const ElectricButton = () => {
             </filter>
           </defs>
         </svg>
-        Register
-      </button>
+        {ButtonName}
+      </button >
 
-      <button class="electric hide" id="electric2">
-        {" "}
-        Register
+      <button className="electric hide" id="electric2">
+      {ButtonName}
       </button>
     </div>
     </div>

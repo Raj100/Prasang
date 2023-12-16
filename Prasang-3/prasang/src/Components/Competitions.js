@@ -65,26 +65,31 @@ const Competitions = () => {
           eventName="CodeCombat"
           eventImgSrc={codeCombatImg}
           eventRole="Architect & Engineer"
+          eventLink="CodeCombat"
         />
         <EventBox
           eventName="ArduNova"
           eventImgSrc="https://www.shutterstock.com/image-photo/chatbot-chat-ai-concept-artificial-260nw-2353739099.jpg"
           eventRole="Architect & Engineer"
+          eventLink="CodeCombat"
         />
         <EventBox
           eventName="Track Master"
           eventImgSrc="https://images.pexels.com/photos/8566474/pexels-photo-8566474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
           eventRole="Architect & Engineer"
+          eventLink="TrackMaster"
         />
         <EventBox
           eventName="Quizzix"
           eventImgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwMlx5Qt08vQwNMRjMw02f8G2d1TCBcsj3w&usqp=CAU"
           eventRole="Architect & Engineer"
+          eventLink="Quizzix"
         />
         <EventBox
           eventName="TechDebate"
           eventImgSrc="https://images.app.goo.gl/MSNDkCZxzWdpAY6UA"
           eventRole=""
+          eventLink="TechDebate"
         />
       </div>
 
@@ -99,11 +104,13 @@ const Competitions = () => {
           eventName="Futsal"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/0/06/Futebol_Salao_Pan2007.jpg"
           eventRole="Architect & Engineer"
+          eventLink="Futsal"
         />
         <EventBox
           eventName="Game of Tag"
           eventImgSrc="https://global-uploads.webflow.com/60dfb7bd2f9507f7616a7cac/60e11d929d6c02ebfd8b62ae_41-DSC02043.jpg"
           eventRole="Architect & Engineer"
+          eventLink="Game of Tag"
         />
       </div>
       <div className="events cultural-event compet">

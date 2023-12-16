@@ -9,6 +9,7 @@ import CodeCombat from './Pages/codeCombat';
 import reportWebVitals from './reportWebVitals';
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import BoxCricket from './Pages/BoxCricket';
+import FutsalPage from './Pages/FutsalPage';
 
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
@@ -19,7 +20,8 @@ const AppRoutes = () => (
     <Route path="/Quizzes" element={<Quizzes />} />
     <Route path="/CodeSprint" element={<CodeSprint />} />
     <Route path="/CodeCombat" element={<CodeCombat />} />
-    <Route path="/BoxCricket" element={BoxCricket}></Route>
+    <Route path="/BoxCricket" element={<BoxCricket/>}></Route>
+    <Route path="/Futsal" element={<FutsalPage/>}></Route>
     <Route path="*" element={<ErrorPage />} />
   </Routes>
 );

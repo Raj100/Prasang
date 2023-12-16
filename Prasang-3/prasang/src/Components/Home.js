@@ -1,5 +1,5 @@
 import React from "react";
-import "./Home.css";
+import Teslalogo from "../Assets/Tesla-logo.png"
 // import mandalaArt from "../Assets/abc.png";
 // import prasang1 from "../Assets/prasang-1.png";
 // import prasangText from "../Assets/prasang.png";
@@ -146,7 +146,7 @@ const Home = () => {
   </svg>
 </div>
 */}
-
+      <img className="Tesla-logo" src={Teslalogo} alt="" />
       <svg
         className="Lightning-left "
         viewBox="0 0 100 2000"

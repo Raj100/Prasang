@@ -69,6 +69,7 @@ header a {
 .logo-top {
   padding: 20px 0;
   font-family: Godofthunder;
+  font-size: 2rem;
   color: #ffcd00;
     /* background: linear-gradient(to right, #f32170, #ff6b08,#cf23cf, #eedd44); */
     /* letter-spacing: 2px; */
@@ -622,7 +623,12 @@ footer {
   }
 }
 
-
+.electric-button{
+  position: relative;
+  width: 100px;
+  height: 100px;
+  overflow-y: hidden;
+}
 .buttonHolder{
   position: relative;
   transition: all 1s cubic-bezier(0.075, 0.82, 0.165, 1);
@@ -640,7 +646,7 @@ footer {
   color: white;
   position: relative;
   filter: blur(0px);
-
+  /* translate: 0 -20px; */
 }
 
 #electric2{
@@ -668,8 +674,6 @@ stroke-dashoffset: 0;
   animation: dash 1s linear;
   animation-iteration-count: infinite;
   animation-direction: alternate-reverse;
-
-
 }
 
 .blue{
@@ -681,7 +685,9 @@ stroke-dashoffset: 0;
   animation-direction: alternate-reverse;
  
 }
-
+.yellow-down{
+  translate: 0 181px;
+}
 #y1{
   top: -115%;
   left: -5%;
@@ -810,11 +816,19 @@ stroke-dashoffset: 0;
   opacity: 0;
 }
 
-#electric:hover + .hide{
+/* #electric:hover + .hide{
   opacity: 1 ;
 }
 #electric:hover  .hide{
   opacity: 1 ;
+} */
+.electric:hover + .hide,
+.electric:hover .hide {
+  opacity: 1;
+}
+
+.electric:hover .part {
+  display: flex;
 }
 
 
@@ -851,8 +865,6 @@ stroke-dashoffset: 0;
 .events-menu li.active{
   border-radius: 30px;
   border: #ffcd00;
-}
-.technical-event{
 }
 .sports-event{
   display: none;
@@ -935,10 +947,44 @@ stroke-dashoffset: 0;
 }
 .Register{
   position: absolute;
-  bottom: 10%;
+  overflow: hidden;
+  bottom: 0%;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
 }
-.Register2{
+.more-info{
   position: absolute;
-  bottom: 10%;
-  right: 30%;
+  overflow: hidden;
+  bottom: 5%;
+  padding: 10px;
+  width: 200px;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+::-moz-selection { /* Code for Firefox */
+  color: black;
+  background: #ffcd00;
+}
+
+::selection {
+  color: black;
+  background: #ffcd00;
+}
+
+.Tesla-logo{
+  width: 50px;
+  height: 50px;
+  box-shadow: 3px 3px 1px #ccc;
+  z-index: 10;
+  margin-left: 50px;
+}
+.Nit-Goa-logo{
+  width: 50px;
+  height: 50px;
+  filter: drop-shadow(5px 5px 5px #fff);
+  z-index: 10;
+  margin-left: 50px;
 }
