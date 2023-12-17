@@ -57,7 +57,7 @@ const Competitions = () => {
       <div className="events technical-event compet">
         <EventBox
           eventName="Code sprint (24 hour Hackathon)"
-          eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/b/b2/Wikimania_hackathon_2.jpg"
+          eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Wikimania_hackathon_2.JPG/800px-Wikimania_hackathon_2.JPG"
           eventRole="Register for Code sprint competition"
           eventLink="CodeSprint"
         />
@@ -71,7 +71,7 @@ const Competitions = () => {
           eventName="ArduNova"
           eventImgSrc="https://www.shutterstock.com/image-photo/chatbot-chat-ai-concept-artificial-260nw-2353739099.jpg"
           eventRole="Architect & Engineer"
-          eventLink="CodeCombat"
+          eventLink="ArduNova"
         />
         <EventBox
           eventName="Track Master"
@@ -86,7 +86,7 @@ const Competitions = () => {
           eventLink="Quizzix"
         />
         <EventBox
-          eventName="TechDebate"
+          eventName="Tech Debate"
           eventImgSrc="https://images.app.goo.gl/MSNDkCZxzWdpAY6UA"
           eventRole=""
           eventLink="TechDebate"
@@ -110,44 +110,53 @@ const Competitions = () => {
           eventName="Game of Tag"
           eventImgSrc="https://global-uploads.webflow.com/60dfb7bd2f9507f7616a7cac/60e11d929d6c02ebfd8b62ae_41-DSC02043.jpg"
           eventRole="Architect & Engineer"
-          eventLink="Game of Tag"
+          eventLink="GameofTag"
         />
       </div>
+
+
       <div className="events cultural-event compet">
         <EventBox
           eventName="Energetic Euphoria Express (Group Dance)"
           eventImgSrc="https://www.stgpresents.org/images/education/Dance-This/dt26.jpg"
           eventRole="Register for Code sprint competition"
+          eventLink="EnergeticEuphoriaExpress"
         />
         <EventBox
           eventName="Beat Battle Bonanza (Dance Battle)"
           eventImgSrc="https://live.staticflickr.com/65535/40820359833_08709cae31_b.jpg"
           eventRole=""
+          eventLink="BeatBattleBonanza"
         />
         <EventBox
           eventName="The Vocal Nirvana (Singing Solo/ Duet) Battle of Bands"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/8/87/Roxette_at_the_Beacon%2C_September_2012.jpg"
           eventRole="Architect & Engineer"
+          eventLink="TheVocalNirvana"
         />
         <EventBox
           eventName="Nukkad Natak (Street Play)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Nukkad_Natak.jpg/2560px-Nukkad_Natak.jpg"
           eventRole="Architect & Engineer"
+          eventLink="NukkadNatak"
         />
         <EventBox
           eventName="Jokes Jubilation (Stand up)"
           eventImgSrc="https://theimission.weebly.com/uploads/6/1/9/1/61915227/copy-of-dsc-4585_orig.jpg"
           eventRole="Architect & Engineer"
+          eventLink="JokesJubilation"
         />
         <EventBox
           eventName="Rainbow Palette (Face painting)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/7/7e/Self_traditional_folk_face_painting_%282%29.jpg"
           eventRole=""
+          eventLink="RainbowPalette"
         />
         <EventBox
           eventName="The Retail Therapy (Fashion show)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Magdalena_Frackowiak.jpg/800px-Magdalena_Frackowiak.jpg"
           eventRole=""
+          eventLink="TheRetailTherapy"
         />
       </div>
     </div>

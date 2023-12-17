@@ -1,5 +1,6 @@
 import React from "react";
 import Teslalogo from "../Assets/Tesla-logo.png"
+import NitGoalogo from "../Assets/NitGoa-logo.png"
 // import mandalaArt from "../Assets/abc.png";
 // import prasang1 from "../Assets/prasang-1.png";
 // import prasangText from "../Assets/prasang.png";
@@ -147,6 +148,7 @@ const Home = () => {
 </div>
 */}
       <img className="Tesla-logo" src={Teslalogo} alt="" />
+      <img className="Nit-Goa-logo" src={NitGoalogo} alt="" />
       <svg
         className="Lightning-left "
         viewBox="0 0 100 2000"
@@ -214,7 +216,9 @@ const Home = () => {
             Prasang!
           </p>
         </div>
+        
       </div>
+
     </div>
   );
 };

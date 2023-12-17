@@ -44,11 +44,12 @@ header {
 header.sticky {
   padding: 5px 100px;
   position: fixed;
-  background-color: #001220;
+  background: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(2px);
   /* border-radius: 10% 77% 86% / 0% 0% 31% 31% ; */
   border-radius: 10% 10% 77% 86% / 0% 0% 50% 50% ;
-  border: 1px solid rgba(249, 157, 28, 0.2);
-  opacity: 0.7;
+  border-bottom: 1px solid rgba(249, 234, 28, 0.2);
+  /* opacity: 0.7; */
 }
 header a {
   text-decoration: none;
@@ -165,6 +166,8 @@ header a {
   width: 50px;
   height: 500px;
   left: 0%;
+  /* filter: drop-shadow(0px 0px 2px #ffcd00); */
+
   /* translate: 100%; */
 /* -webkit-animation: spin 20s linear infinite;
   -moz-animation: spin 20s linear infinite;
@@ -191,6 +194,8 @@ header a {
   height: 500px;
   /* overflow:hidden; */
   position: absolute;
+  /* filter: drop-shadow(0px 0px 2px #ffcd00); */
+  
   /* -webkit-animation: spin 20s linear infinite reverse;
   -moz-animation: spin 20s linear infinite reverse;
   animation: spin 20s linear infinite reverse; */
@@ -238,7 +243,8 @@ header a {
   justify-content: space-evenly;
   flex-wrap: wrap;
   overflow-x: hidden;
-  padding-bottom: 10px;
+  padding-bottom: 50px;
+  /* padding-bottom: 10px; */
 }
 .event-holder{
   width: 350px;
@@ -267,7 +273,6 @@ header a {
   width: 300px;
   height: 200px;
 }
-/* This container is needed to position the front and back side */
 .event-content {
   position: relative;
   width: 100%;
@@ -906,25 +911,56 @@ stroke-dashoffset: 0;
   align-items: center;
   justify-content: center;
   color: #fff;
-  height: 100vh;
+  min-height: 100vh;
   width: 100vw;
+  padding-top: 100px;
   background-color: #001220;
   flex-direction: column;
 }
 .Events-info h1{
-  padding-top: 100px ;
+  margin-bottom: 10px;
   font-family: Godofthunder;
 }
 .Events-info-main{
   border-radius: 50px;
   border: 2px solid #ffcd00;
   height: 100%;
-  width: 100%;
+  width: 100vw;
   position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 50px;
+  flex-wrap:wrap;
+}
+.Events-info-main-left{
+  min-width: 350px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px 50px;
+  border: 1px solid #ffcd00;
+  border-radius: 30px;
+  padding: 10px 0;
+}
+.Events-info-main-right{
+  /* width: 100%; */
+  position: relative;
+  width: 500px;
+  flex:1 1 auto;
+  min-height: 500px;
+  border-radius: 30px;
+  padding: 50px;
+  border: 1px solid #ffcd00;
+  margin: 10px;
+}
+.rules{
+  list-style: none;
+}
+.Events-info-img{
+  width: 300px;
+  height: 300px;
+  border-radius: 30px;
 }
 .Events-info-navigation{
   background-color: hsl(0, 0%, 25%);
@@ -975,16 +1011,124 @@ stroke-dashoffset: 0;
 }
 
 .Tesla-logo{
-  width: 50px;
-  height: 50px;
-  box-shadow: 3px 3px 1px #ccc;
+  position: absolute;
+  width: 75px;
+  height: 75px;
+  /* box-shadow: 3px 3px 1px #ccc; */
+  filter: drop-shadow(0px 0px 10px #ffcd00);
   z-index: 10;
   margin-left: 50px;
 }
 .Nit-Goa-logo{
-  width: 50px;
-  height: 50px;
-  filter: drop-shadow(5px 5px 5px #fff);
+  position: absolute;
+  right: 50px;
+  width: 75px;
+  height: 75px;
+  filter: drop-shadow(0px 0px 10px #ffcd00);
   z-index: 10;
   margin-left: 50px;
+}
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #001220; 
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #ffcd00; 
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #fff; 
+}
+.Download-btn{
+  font-weight: 500px;
+  border-radius: 30px;
+  background-color: #ffcd00;
+  padding: 10px 60px;
+  outline: none;
+  border: 0;
+  cursor: pointer;
+  font: 1em sans-serif;
+  margin: 5px;
+  /* font-size: 22px; */
+}
+.Download-btn i{
+  padding: 0px 5px;
+}
+@media screen and (max-width: 480px) {
+  .Events-info-main{
+    border-radius: 50px;
+    border: 2px solid #001220;
+    height: 100%;
+    width: 100vw;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 10px;
+    margin-top: 50px;
+    flex-wrap:wrap;
+  }
+  .Events-info-img{
+    width: 100%;
+    height: 300px;
+    border-radius: 30px;
+  }
+  .Events-info-main-right{
+    /* width: 100%; */
+    position: relative;
+    /* width: 500px; */
+    min-height: 500px;
+    border-radius: 30px;
+    padding: 50px;
+    border: 1px solid #ffcd00;
+    margin: 0px;
+    margin-top: 10px;
+  }
+  .Events-info-main-left{
+    min-width: 200px;
+  }
+  .event-holder{
+    width: 85vw;
+    height: 350px;
+    box-shadow: #ffcd00;
+    border-radius: 7px;
+    background: linear-gradient(rgba(246, 71, 27, 0.1), rgba(229, 255, 204, 0.1));
+    border: 1px solid #ffcd00;
+    margin: 50px 50px 100px 50px;
+    text-align: center;
+  }
+  .events-box {
+    min-width: 200px;
+    width: 100%;
+    height: 350px;
+  }
+  .event-img {
+    width: 300px;
+    height: 200px;
+  }
+  .event-content {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+    border: 1px solid #ffcd00;
+    border-radius: 7px;
+  }
+  .merchandise img{
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 480px) {
+  
 }

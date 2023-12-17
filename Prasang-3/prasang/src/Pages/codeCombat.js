@@ -1,11 +1,18 @@
 import React from 'react'
-import '../App.css'
-import Navbar from '../Components/Navbar/Navbar'
+import Navbar from '../Components/Navbar'
+import EventsInfoPage from '../Components/EventsInfoPage'
+import CodeCombatImg from "../Assets/Code Combat.png"
 function codeCombat() {
   return (
     <div>
-      <Navbar></Navbar>
-      <h1>gghdfgdcgh</h1>
+            <EventsInfoPage
+        eventName="Code Combat"
+        eventImgSrc={CodeCombatImg}
+          eventLink=""
+          eventRules=""
+          eventPrize="INR 1000"
+          eventFile=""
+      />
     </div>
   )
 }

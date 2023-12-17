@@ -1,35 +1,22 @@
-import React from 'react'
+import React from "react";
 // import '../App.css'
-import Navbar from '../Components/Navbar/Navbar'
-import ElectricButton from '../Components/ElectricButton'
-import { Link } from 'react-router-dom'
+import Navbar from "../Components/Navbar";
+import ElectricButton from "../Components/ElectricButton";
+import { Link } from "react-router-dom";
+import EventsInfoPage from "../Components/EventsInfoPage"; // Updated component name
 
-const codeSprintPage = () => {
+const CodeSprintPage = () => {
   return (
-    <div className='Events-main'>
-      <Navbar></Navbar>
-      <div className='Events-info'>
-      <h1>Code Sprint</h1>
-      <div className='Events-info-main'>
-        <div className='Events-info-navigation'>
-          <ul>
-            <li>Rules</li>
-            <li>Prize</li>
-          </ul>
-        </div>
-        <div>
-          <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iure cum soluta perspiciatis dolore voluptate saepe ipsam, sit, maiores earum consequuntur nulla hic. Labore autem at iure cumque illo voluptatum debitis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur quidem similique fugiat nihil vitae ex reiciendis quaerat perferendis facilis labore totam delectus distinctio repellendus, cumque quis tempore placeat quam recusandae cum exercitationem esse. Accusantium voluptate dicta consequatur ea eius itaque. Impedit ex ut aspernatur eligendi, perspiciatis vero et minima voluptates provident velit laborum nemo maxime aliquam repellat? Sed ipsa dolore laborum fugiat assumenda iusto exercitationem debitis. Dolor explicabo alias quae, reiciendis sint molestias veritatis nostrum itaque pariatur facilis temporibus nemo.</p>
-        </div>
-        <div className="Register">
-          <Link to="/Register">
-        <ElectricButton></ElectricButton>
-        </Link>
-        </div>
-      </div>
-      </div>
+    <div>
+      <EventsInfoPage
+        eventName="Code Sprint"
+        eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b2/Wikimania_hackathon_2.JPG/2560px-Wikimania_hackathon_2.JPG"
+        eventFile=""
+        eventPrize=""
+        eventRules=""
+      />
     </div>
-  )
-}
+  );
+};
 
-export default codeSprintPage
-
+export default CodeSprintPage;

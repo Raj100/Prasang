@@ -21,7 +21,8 @@ const Navbar = () => {
   return (
     <>
       <header>
-        <h1 className="logo-top"><span>P</span><span>R</span><span>A</span><span>S</span><span>A</span><span>N</span><span>G</span></h1>
+        <a href="/#Home"><h1 className="logo-top">PRASANG</h1></a>
+        {/* <i class="fa fa-bars menu menu-icon" aria-hidden="true"></i> */}
         <div className="navigation">
           <a href='/#Home'><li>Home</li></a>
           <a href='/#Workshops'><li>Workshops</li></a>

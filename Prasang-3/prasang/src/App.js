@@ -1,5 +1,5 @@
 import './App.css';
-import Navbar from "./Components/Navbar/Navbar";
+import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Workshops from "./Components/Workshops";
 import Competitions from "./Components/Competitions";
@@ -24,7 +24,7 @@ function App() {
       setTimeout(()=>{
         setLoading(false);
       },4000)
-    }
+    };
 
     dataFetchFromApi();
   },[])
