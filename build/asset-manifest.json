@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/static/css/main.4aa92057.css",
+    "main.js": "/static/js/main.82c0cecc.js",
+    "static/js/787.eafa8d91.chunk.js": "/static/js/787.eafa8d91.chunk.js",
+    "static/media/blue-orb.jpg": "/static/media/blue-orb.7bcc008959464b579ea4.jpg",
+    "static/media/Code Combat.png": "/static/media/Code Combat.0a78ba7b8e3a4dfc3fa9.png",
+    "static/media/NitGoa-logo.png": "/static/media/NitGoa-logo.bf757bc0070204429183.png",
+    "static/media/Tesla-logo.png": "/static/media/Tesla-logo.c91f2e82823f378522e0.png",
+    "static/media/Godofthunder-0WO1P.ttf": "/static/media/Godofthunder-0WO1P.ab3c0bf708bfd0fabd56.ttf",
+    "static/media/GAME OF TAG.pdf": "/static/media/GAME OF TAG.3bfa7ff1bde866b4f8e0.pdf",
+    "static/media/Lightningvolt-xoqm.ttf": "/static/media/Lightningvolt-xoqm.70b2a167c719af96b921.ttf",
+    "static/media/UnderstrukkRegular-4pZK.ttf": "/static/media/UnderstrukkRegular-4pZK.1e412f711d23e4ff59df.ttf",
+    "static/media/Sponsors-top.svg": "/static/media/Sponsors-top.4efa9d3a2d46fe4a6eb7.svg",
+    "static/media/Workshop-top.svg": "/static/media/Workshop-top.2ac3717262898c318bd4.svg",
+    "index.html": "/index.html",
+    "static/media/Competition-top.svg": "/static/media/Competition-top.3e96ee278e8f49b6b655.svg",
+    "static/media/Merch-top.svg": "/static/media/Merch-top.3f30c47d98675ab42faa.svg",
+    "main.4aa92057.css.map": "/static/css/main.4aa92057.css.map",
+    "main.82c0cecc.js.map": "/static/js/main.82c0cecc.js.map",
+    "787.eafa8d91.chunk.js.map": "/static/js/787.eafa8d91.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4aa92057.css",
+    "static/js/main.82c0cecc.js"
+  ]
+}
