@@ -1,10 +1,8 @@
 import { createRoot } from "react-dom/client";
 import React from "react";
-import ReactDOM from "react-dom";
 import "./index.css";
 import ErrorPage from "./error-page";
 import App from "./App";
-import Quizzes from "./Pages/QuizzesPage";
 import CodeSprint from "./Pages/codeSprintPage";
 import CodeCombat from "./Pages/codeCombat";
 import reportWebVitals from "./reportWebVitals";
@@ -13,15 +11,58 @@ import BoxCricket from "./Pages/BoxCricket";
 import FutsalPage from "./Pages/FutsalPage";
 import EventsInfoPage from "./Components/EventsInfoPage";
 import GameofTag from "./Assets/GAME OF TAG.pdf"
+import CommingSoon from "./Components/CommingSoon";
+import OurTeam from "./Components/OurTeam";
 
 const root = createRoot(document.getElementById("root"));
 
 const AppRoutes = () => (
   <Routes>
     <Route path="/" element={<App />} errorElement={<ErrorPage/>}/>
+    <Route path="/CommingSoon" element={<CommingSoon />} />
+    <Route path="/OurTeam" element={<OurTeam />} />
+    <Route
+      path="/Workshop-1"
+      element={
+        <EventsInfoPage
+          eventName="Workshop-1"
+          eventImgSrc="https://t3.ftcdn.net/jpg/00/77/94/04/360_F_77940420_GpoP08HyIvbklcTTUYl20ItCOq2QEpxL.jpg"
+          eventLink="CommingSoon"
+          eventRules="Comming soon"
+          eventPrize="Comming soon"
+          eventFile="Comming soon"
+        />
+      }
+    />
+        <Route
+      path="/Workshop-2"
+      element={
+        <EventsInfoPage
+          eventName="Workshop-2"
+          eventImgSrc="https://t3.ftcdn.net/jpg/00/77/94/04/360_F_77940420_GpoP08HyIvbklcTTUYl20ItCOq2QEpxL.jpg"
+          eventLink="CommingSoon"
+          eventRules=" Comming soon"
+          eventPrize="Comming soon"
+          eventFile="Comming soon"
+        />
+      }
+    />
+        <Route
+      path="/Workshop-3"
+      element={
+        <EventsInfoPage
+          eventName="Workshop-3"
+          eventImgSrc="https://t3.ftcdn.net/jpg/00/77/94/04/360_F_77940420_GpoP08HyIvbklcTTUYl20ItCOq2QEpxL.jpg"
+          eventLink="CommingSoon"
+          eventRules=" Comming soon"
+          eventPrize="Comming soon"
+          eventFile="Comming soon"
+        />
+      }
+    />
+
     <Route path="/CodeSprint" element={<CodeSprint />} />
     <Route path="/CodeCombat" element={<CodeCombat />} />
-    {/* <Route path="/Quizzes" element={<Quizzes />} /> */}
     <Route
       path="/TrackMaster"
       element={
@@ -37,7 +78,7 @@ const AppRoutes = () => (
         <EventsInfoPage
           eventName="ArduNova"
           eventImgSrc="https://images.pexels.com/photos/8566474/pexels-photo-8566474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          eventLink=""
+          eventLink="CommingSoon"
           eventRules=""
           eventPrize=""
           eventFile=""
@@ -50,7 +91,7 @@ const AppRoutes = () => (
         <EventsInfoPage
           eventName="Track Master"
           eventImgSrc="https://images.pexels.com/photos/8566474/pexels-photo-8566474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          eventLink=""
+          eventLink="CommingSoon"
           eventRules="jbljkb"
           eventPrize=""
           eventFile=""
@@ -63,7 +104,7 @@ const AppRoutes = () => (
         <EventsInfoPage
           eventName="Tech Debate"
           eventImgSrc="https://images.app.goo.gl/MSNDkCZxzWdpAY6UA"
-          eventLink=""
+          eventLink="CommingSoon"
           eventRules=""
           eventPrize=""
           eventFile=""

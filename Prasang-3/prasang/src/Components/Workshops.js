@@ -1,16 +1,11 @@
 import React from "react";
-import { Link } from "react-router-dom";
-import { useEffect } from "react";
-import gsap from "gsap";
-import { useRef,useLayoutEffect } from 'react';
-import ElectricButton from "./ElectricButton";
 import EventBox from "./EventBox";
 const Workshops = () => {
   // useEffect(() => {
   // }, []);
   return (
+    <>
     <div id="Workshops">
-      <div className="Workshop-top spacer"></div>
       <h1 className="center">Workshops</h1>
       <div className="events">
 
@@ -33,6 +28,7 @@ const Workshops = () => {
 
       <div class="spacer layer2"> </div>
     </div>
+    </>
   );
 };
 

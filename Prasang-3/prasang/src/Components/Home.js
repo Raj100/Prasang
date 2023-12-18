@@ -1,12 +1,7 @@
 import React from "react";
 import Teslalogo from "../Assets/Tesla-logo.png"
 import NitGoalogo from "../Assets/NitGoa-logo.png"
-// import mandalaArt from "../Assets/abc.png";
-// import prasang1 from "../Assets/prasang-1.png";
-// import prasangText from "../Assets/prasang.png";
-// import prasang2 from "../Assets/prasang-2.png";
-// import teslacoil from "../Assets/Tesla-coil.png";
-import { useEffect } from "react";
+import "./Home.css"
 // class Electricity {
 //   constructor(selector) {
 //     this.svg = document.querySelector(selector);
@@ -200,9 +195,9 @@ const Home = () => {
 
       <div> 
         <div className="logo">
-          <h1>PraSang</h1>
-          <p>Organised by EEE Department NIT GOA </p>
-          <h3>Welcome to Prasang!</h3>
+          {/* <h1>PraSang</h1> */}
+          {/* <p>Organised by EEE Department NIT GOA </p> */}
+          <h1>Welcome to Prasang!</h1>
           <p>
             The Electrical and Electronics Engineering (EEE) department at NIT
             Goa proudly presents Prasang, an annual extravaganza that celebrates
@@ -218,7 +213,7 @@ const Home = () => {
         </div>
         
       </div>
-
+      <div className="Workshop-top spacer"></div>
     </div>
   );
 };

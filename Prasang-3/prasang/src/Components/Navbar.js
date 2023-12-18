@@ -1,33 +1,23 @@
-import React, { useEffect } from 'react';
-import { Link } from 'react-router-dom';
-
+import { Link } from "react-router-dom";
+import "./Navbar.css"
 const Navbar = () => {
-  useEffect(() => {
-    const handleScroll = () => {
-      var header = document.querySelector("header");
-
-      if (header) {
-        header.classList.toggle('sticky', window.scrollY > 0);
-      }
-    };
-
-    window.addEventListener('scroll', handleScroll);
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll);
-    };
-  }, []);
 
   return (
     <>
       <header>
         <a href="/#Home"><h1 className="logo-top">PRASANG</h1></a>
-        {/* <i class="fa fa-bars menu menu-icon" aria-hidden="true"></i> */}
+        <input type="checkbox"  id='check'/>
+        <label htmlFor="check" className='menu-icon'>
+        <i className="fa fa-bars menu " aria-hidden="true" id='menu'></i>
+        <i className="fa fa-times" aria-hidden="true"id='close'></i>
+        </label>
+        
         <div className="navigation">
-          <a href='/#Home'><li>Home</li></a>
-          <a href='/#Workshops'><li>Workshops</li></a>
-          <a href="/#Events"><li>Events</li></a>
-          <a href='/'><li>Contact us</li></a>
+          <a href='/#Home'>Home</a>
+          <a href='/#Workshops'>Workshops</a>
+          <a href="/#Events">Events</a>
+          <a href='/#Merchandize'>Merchandize</a>
+          <a href="/OurTeam">Our Team</a>
         </div>
       </header>
     </>

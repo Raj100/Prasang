@@ -1,0 +1,42 @@
+.Our-Team{
+    width: 100vw;
+    background-color: #001220;
+    color: #fff;
+    padding-top: 100px;
+}
+.Organisers{
+    padding: 50px;
+    display: grid;
+    /* grid-template-columns: auto auto auto auto; */
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+.profile{
+    margin: 50px;
+    border: 2px solid #fff;
+    width: 200px;
+    height: 200px;
+}
+.profile:hover{
+    box-shadow: 0px 0px 10px#fff;
+}
+.profile-photo{
+    height: 100%;
+    width: 100%;
+    translate: 10px 10px;
+    border:  2px solid #fff;
+}
+@media screen and (max-width:1000px){
+    .Organisers{
+        padding: 5px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    .profile{
+        border: 2px solid #fff;
+        width: 200px;
+        height: 200px;
+    }
+}

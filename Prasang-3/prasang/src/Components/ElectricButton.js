@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from "prop-types"
+import "./ElectricButton.css"
 const ElectricButton = ({ ButtonName}) => {
   return (
     <div className=".electric-button">

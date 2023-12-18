@@ -82,7 +82,7 @@ const Competitions = () => {
         <EventBox
           eventName="Quizzix"
           eventImgSrc="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcThwMlx5Qt08vQwNMRjMw02f8G2d1TCBcsj3w&usqp=CAU"
-          eventRole="Architect & Engineer"
+          eventRole="Date:26/01"
           eventLink="Quizzix"
         />
         <EventBox

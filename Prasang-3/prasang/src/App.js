@@ -3,9 +3,9 @@ import Navbar from "./Components/Navbar";
 import Home from "./Components/Home";
 import Workshops from "./Components/Workshops";
 import Competitions from "./Components/Competitions";
-import Sponsors from './Components/Sponsors/Sponsors'
+import Sponsors from './Components/Sponsors'
 import Merchandise from './Components/Merchandise';
-import FAQs from './Components/FAQs/FAQs'
+import FAQs from './Components/FAQs'
 import Footer from './Components/Footer/Footer'
 import AOS from 'aos'
 import 'aos/dist/aos'
@@ -17,7 +17,7 @@ function App() {
   const [ Loading , setLoading]=useState(true);
   useEffect(()=>{
     AOS.init({
-      duration: 1200,
+      duration: 700,
     })
     const dataFetchFromApi = () =>{
       //Basically no api for this project so..

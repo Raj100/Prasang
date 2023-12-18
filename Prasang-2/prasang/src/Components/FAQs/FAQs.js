@@ -1,4 +1,3 @@
-// components/FAQs.js
 import React from 'react';
 
 const FAQs = () => {
@@ -33,8 +32,6 @@ const FAQs = () => {
           </p>
         </div>
       </div>
-
-      {/* Add more FAQ items as needed */}
     </div>
   );
 };

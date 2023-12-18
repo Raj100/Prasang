@@ -1,12 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import ElectricButton from "./ElectricButton";
-import PropTypes from "prop-types";
+import "./EventBox.css"
 
 const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
   return (
     <div>
-      <div className="event-holder" data-aos="fade-up">
+      <div className="event-holder" data-aos="zoom-in-up">
         <h1>{eventName}</h1>
         <div className="events-box">
           <div className="event-content">
@@ -14,7 +14,7 @@ const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
               <img
                 className="event-img"
                 src={eventImgSrc}
-                alt={`${eventName} Image`}
+                alt={`${eventName}`}
               />
             </div>
             <div className="event-back">
@@ -33,11 +33,5 @@ const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
   );
 };
 
-EventBox.propTypes = {
-  eventName: PropTypes.string.isRequired,
-  eventImgSrc: PropTypes.string.isRequired,
-  eventRole: PropTypes.string.isRequired,
-  eventLink: PropTypes.string.isRequired,
-};
 
 export default EventBox;

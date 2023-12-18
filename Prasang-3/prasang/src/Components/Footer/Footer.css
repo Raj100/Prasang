@@ -1,0 +1,46 @@
+footer {
+  background: #3f3f3f;
+  padding-top: 50px;
+  color: white;
+}
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  padding: auto;
+  justify-content: space-evenly;
+  margin-bottom: 15px;
+}
+.social {
+  text-align: center;
+  padding: 5px;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+}
+.social i {
+  color: white;
+  padding: 5px;
+  font-size: 25px;
+}
+.social i:hover {
+  color: #2b57ca;
+}
+.col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+.col a {
+  color: white;
+}
+.col a i {
+  padding: 5px;
+}
+.bottom {
+  background: black;
+  text-align: center;
+  padding: 10px 0;
+  font-size: 16px;
+}

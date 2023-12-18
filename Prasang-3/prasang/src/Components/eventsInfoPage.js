@@ -3,6 +3,7 @@ import PropTypes from "prop-types";
 import Navbar from "./Navbar";
 import { Link } from "react-router-dom";
 import ElectricButton from "./ElectricButton";
+import "./EventsInfoPage.css"
 const eventsInfoPage = ({
   eventName,
   eventImgSrc,
