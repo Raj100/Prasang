@@ -69,7 +69,7 @@ const AppRoutes = () => (
         <EventsInfoPage
           eventName="ArduNova"
           eventImgSrc="https://images.pexels.com/photos/8566474/pexels-photo-8566474.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500"
-          eventLink="CommingSoon"
+          eventLink="/CommingSoon"
           eventRules=""
           eventPrize=""
           eventFile=""
@@ -82,7 +82,7 @@ const AppRoutes = () => (
         <EventsInfoPage
           eventName="Track Master"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/7/7a/40365_Line_Follower_Robot.jpg"
-          eventLink="CommingSoon"
+          eventLink="/CommingSoon"
 eventRules="• The robot must be autonomous/automatic.
 • Ready-made robots are not allowed,the teams can not participate if they use any ready-
 made robots, for example - Lego kits.
@@ -134,7 +134,7 @@ checked(along with the code)"
         <EventsInfoPage
           eventName="Tech Debate"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/e/eb/VIII._Internationales_Finale_Warschau.JPG/220px-VIII._Internationales_Finale_Warschau.JPG"
-          eventLink="CommingSoon"
+          eventLink="/CommingSoon"
 eventRules="1. Format Overview:
 The debate will be team-based with two teams: Affirmative and Negative.
 The resolution will be a contemporary and debatable topic.
@@ -249,7 +249,7 @@ Arpita Sukhwal - +91 86963 86788"
     <EventsInfoPage
       eventName="Box Cricket"
       eventImgSrc="https://media.hudle.in/venues/b11383c4-36e2-48f0-8b19-e6e7c1b77d55/photo/663934d9ca9699e474f795d2b77b956a59377c0e"
-      eventLink="CommingSoon"
+      eventLink="/CommingSoon"
       eventRules="Team Format
 1) Teams will consist of 6 players each side
 2) The team should only have 4 male and 2 female players at any time in the ground/field.
@@ -306,7 +306,7 @@ Bowling rules:
         <EventsInfoPage
           eventName="Game of Tag"
           eventImgSrc="https://global-uploads.webflow.com/60dfb7bd2f9507f7616a7cac/60e11d929d6c02ebfd8b62ae_41-DSC02043.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
           eventRules="-Each team shall be represented by 2 students 
 – 1 boy and 1 girl. There can be two injury substitutes 
 – 1 boy and 1 girl.
@@ -323,7 +323,7 @@ Bowling rules:
         <EventsInfoPage
           eventName="Tug of War"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/a/a3/Irish_600kg_euro_chap_2009_%28cropped%29.JPG"
-          eventLink=""
+          eventLink="/CommingSoon"
 eventRules="-Each department shall be represented by 1 team consisting of 8 boys and 4 girls.
 -The format will be a Round Robin group stage competition with the top 2 teams qualifying for the finals.
 -There can be all substitutes for all players. Each group stage match will be a single Tug. The Final will be a Best of Three Tugs.
@@ -340,7 +340,7 @@ eventRules="-Each department shall be represented by 1 team consisting of 8 boys
         <EventsInfoPage
           eventName="Energetic Euphoria Express (Group Dance)"
           eventImgSrc="https://www.stgpresents.org/images/education/Dance-This/dt26.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
 eventRules="Judging criteria
 ○ Choreography
 ○ Concept
@@ -384,7 +384,7 @@ advance.
         <EventsInfoPage
           eventName="The Vocal Nirvana (Singing Solo/ Duet) Battle of Bands"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/8/87/Roxette_at_the_Beacon%2C_September_2012.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
 eventRules="● VOCAL NIRVANA consists of 3 categories :
 SOLO SENSATION:-Solo singing competition.
 DYNAMIC DUO :- duet singing competition.
@@ -434,7 +434,7 @@ THE ROCKIN’ BAND:-
         <EventsInfoPage
           eventName="Nukkad Natak(Street Play)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/9/99/Nukkad_Natak.jpg/2560px-Nukkad_Natak.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
           eventRules="- Only ONE team per college.
 - Vulgarity of any sense will not be tolerated.
 - Street Play must not offend any religion or profession.
@@ -469,7 +469,7 @@ THE ROCKIN’ BAND:-
         <EventsInfoPage
           eventName="Rainbow Palette(Face painting)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/7/7e/Self_traditional_folk_face_painting_%282%29.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
           eventRules=""
           eventPrize=""
           eventFile=""
@@ -482,7 +482,7 @@ THE ROCKIN’ BAND:-
         <EventsInfoPage
           eventName="The Retail Therapy (Fashion show)"
           eventImgSrc="https://upload.wikimedia.org/wikipedia/commons/thumb/3/3d/Magdalena_Frackowiak.jpg/800px-Magdalena_Frackowiak.jpg"
-          eventLink=""
+          eventLink="/CommingSoon"
           eventRules=""
           eventPrize=""
           eventFile=""
