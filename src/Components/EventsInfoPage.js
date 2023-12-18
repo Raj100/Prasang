@@ -24,7 +24,7 @@ const eventsInfoPage = ({
               <img className="Events-info-img" src={eventImgSrc} alt="" />
               <p>{eventPrize}</p>
               {/* <ElectricButton ButtonName="Download-Brocure"></ElectricButton> */}
-              <a href={eventFile} download><button className="Download-btn">Brochure<i class="fa fa-download" aria-hidden="true"></i></button></a>
+              <a href={eventFile} download><button className="Download-btn">Brochure<i className="fa fa-download" aria-hidden="true"></i></button></a>
             </div>
 
             <div className="Events-info-main-right">

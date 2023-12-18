@@ -28,8 +28,6 @@ const Workshops = () => {
           eventLink="Workshop-3"
         />
       </div>
-
-      <div class="spacer layer2"> </div>
     </div>
     </>
   );
