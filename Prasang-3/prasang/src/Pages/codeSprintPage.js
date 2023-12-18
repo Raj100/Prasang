@@ -1,9 +1,5 @@
 import React from "react";
-// import '../App.css'
-import Navbar from "../Components/Navbar";
-import ElectricButton from "../Components/ElectricButton";
-import { Link } from "react-router-dom";
-import EventsInfoPage from "../Components/EventsInfoPage"; // Updated component name
+import EventsInfoPage from "../Components/EventsInfoPage"; 
 
 const CodeSprintPage = () => {
   return (

@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import "./Navbar.css"
 const Navbar = () => {
 
@@ -13,11 +12,11 @@ const Navbar = () => {
         </label>
         
         <div className="navigation">
-          <a href='/#Home'>Home</a>
-          <a href='/#Workshops'>Workshops</a>
-          <a href="/#Events">Events</a>
-          <a href='/#Merchandize'>Merchandize</a>
-          <a href="/OurTeam">Our Team</a>
+          <a href='/#Home' style={{ '--i': '0' }}>Home</a>
+          <a href='/#Workshops' style={{ '--i': '1' }}>Workshops</a>
+          <a href="/#Events"  style={{ '--i': '2' }}>Events</a>
+          <a href='/#Merchandize' style={{ '--i': '3' }}>Merchandize</a>
+          <a href="/OurTeam"  style={{ '--i': '4' }}>Our Team</a>
         </div>
       </header>
     </>

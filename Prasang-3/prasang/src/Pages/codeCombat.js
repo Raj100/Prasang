@@ -1,5 +1,4 @@
 import React from 'react'
-import Navbar from '../Components/Navbar'
 import EventsInfoPage from '../Components/EventsInfoPage'
 import CodeCombatImg from "../Assets/Code Combat.png"
 function codeCombat() {

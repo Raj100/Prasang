@@ -4,6 +4,7 @@ import ElectricButton from "./ElectricButton";
 import "./EventBox.css"
 
 const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
+  const rulesArray2 = eventRole.split('\n');
   return (
     <div>
       <div className="event-holder" data-aos="zoom-in-up">
@@ -18,8 +19,11 @@ const EventBox = ({ eventName, eventImgSrc, eventRole, eventLink }) => {
               />
             </div>
             <div className="event-back">
-              <p></p>
-              <p> {eventRole}</p>
+            <ul>
+                  {rulesArray2.map((rule, index) => (
+                    <li key={index} className="rules">{rule}</li>
+                  ))}
+                </ul>
               <div className="Register">
                 <Link to={`/${eventLink}`}>
                   <ElectricButton ButtonName="More info"></ElectricButton>

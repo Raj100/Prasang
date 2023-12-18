@@ -23,7 +23,7 @@ function App() {
       //Basically no api for this project so..
       setTimeout(()=>{
         setLoading(false);
-      },4000)
+      },1000)
     };
 
     dataFetchFromApi();
